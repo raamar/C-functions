@@ -1,5 +1,5 @@
 #include <math.h>
-#include "../includes/functions.h"
+#include "functions.h"
 
 double y(double x) {
   double (*point)(double) = x < -1 ? f1 : x < 1.3 ? f2 : f3;

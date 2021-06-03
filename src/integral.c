@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "../includes/integral.h"
+#include "integral.h"
 
 double integral(double (*pfun)(double), size_t acc, double start, double end) {
   const double step = (end - start) / acc;

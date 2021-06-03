@@ -1,2 +1,8 @@
-.vscode/
-build/
+build
+doc
+.out
+.vscode
+.vs
+cmake-build-debug
+build.sh
+out

@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "../includes/writeToCSV.h"
+#include "writeToCSV.h"
 
 void writeToCSV(double (*pfun)(double), size_t pointsNum, double start, double end) {
   FILE *table;
   const double step = (end - start) / pointsNum;
 
-  table = fopen("docs/table.csv", "w+");
+  table = fopen("table.csv", "w+");
   if (!table) {
-    printf("Error: Cannot create ./table.csv\n");
+    printf("Error: Cannot create table.csv\n");
     exit(1);
   }
 
